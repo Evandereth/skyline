@@ -44,7 +44,7 @@ export default function Navbar() {
     >
       <nav
         aria-label="Main"
-        className="mx-auto flex max-w-300 items-center justify-between px-2 py-4 md:px-12"
+        className="mx-auto flex max-w-350 items-center justify-between px-2 py-4 md:px-12"
       >
         {/* Logo */}
         <a href="#top" className="font-display text-[26px] font-bold text-ink uppercase">

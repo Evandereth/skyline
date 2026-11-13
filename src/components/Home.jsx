@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <section className="mx-auto max-w-310 px-6 pb-20 pt-10 md:px-12 lg:pb-24 lg:pt-14">
+    <section className="mx-auto max-w-350 px-6 pb-20 pt-10 md:px-12 lg:pb-10 lg:pt-14">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
     
 
@@ -82,7 +82,7 @@ export default function Home() {
 
     
 
-        <div className="relative min-h-80 overflow-hidden rounded-4xl bg-brand-soft sm:min-h-100 lg:min-h-130">
+        <div className="relative min-h-80 overflow-hidden rounded-2xl bg-brand-soft sm:min-h-100 lg:min-h-130">
           <img src={image} alt="..." className="absolute inset-0 h-full w-full object-cover" />
         </div>
       </div>

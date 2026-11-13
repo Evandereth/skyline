@@ -26,6 +26,13 @@
   /* Fonts */
   --font-display: "Space Grotesk", sans-serif;
   --font-sans: "Inter", sans-serif;
+
+  --animate-marquee: marquee 5s linear infinite;
+
+  /* @keyframes marquee{
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+  } */
 }
 
 html { scroll-behavior: smooth; }
