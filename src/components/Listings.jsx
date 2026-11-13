@@ -7,12 +7,12 @@ import house6 from "../img/house10.jpg"
 
 
 const listings = [
-  { id: 1, tag: "New", name: "The Origin", location: "Ijebu-Oru Exp. way, Ogun State.", beds: 3, baths: 2, sqft: "300", price: "NGN3,000,000", image: house1 },
-  { id: 2, tag: "3D tour", name: "Inizio", location: "GRA, Ijebu Ode, Ogun State.", beds: 4, baths: 3, sqft: "500", price: "NGN5,000,000", image: house2 },
-  { id: 3, tag: "For rent", name: "Ire Estate", location: "Imodi, Ijebu Ode, Ogun State.", beds: 2, baths: 2, sqft: "300", price: "NGN1,5000,000/yr", image: house3 },
+  { id: 1, tag: "New", name: "The Origin", location: "Ijebu-Oru Exp. way, Ogun State.", beds: 3, baths: 2, sqft: "300", price: "NGN3,000,000", image: house6 },
+  { id: 2, tag: "3D tour", name: "Inizio", location: "GRA, Ijebu Ode, Ogun State.", beds: 4, baths: 3, sqft: "500", price: "NGN5,000,000", image: house3 },
+  { id: 3, tag: "For rent", name: "Ire Estate", location: "Imodi, Ijebu Ode, Ogun State.", beds: 2, baths: 2, sqft: "300", price: "NGN1,5000,000/yr", image: house1 },
   { id: 4, tag: "New", name: "Amen Estate - Phase 2", location: "Ibeju-Lekki, Lagos State.", beds: 5, baths: 4, sqft: "1000", price: "NGN12,000,000", image: house4 },
   { id: 5, tag: "Open house", name: "The Baruch Residence", location: "Ibeju-Lekki, Lagos State.", beds: 3, baths: 2, sqft: "300", price: "NGN8,500,000", image: house5 },
-  { id: 6, tag: "For rent", name: "Sycamore", location: "Ibeju-Lekki, Lagos State.", beds: 1, baths: 1, sqft: "300", price: "NGN1,500,000/mo", image: house6 },
+  { id: 6, tag: "For rent", name: "Sycamore", location: "Ibeju-Lekki, Lagos State.", beds: 1, baths: 1, sqft: "300", price: "NGN1,500,000/yr", image: house2 },
 ];
 
 function ListingCard({ item }) {
