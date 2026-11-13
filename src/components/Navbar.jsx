@@ -26,28 +26,38 @@ export default function Navbar() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    if(!open) return
+    const startY = window.scrollY
+    const close = () => {
+      if(Math.abs(window.scrollY - startY) > 10) setOpen(false)
+    }
+    window.addEventListener('scroll', close, { passive: true})
+    return()=> window.removeEventListener('scroll', close)
+  }, [open])
+
   return (
     <header
-      className={`sticky top-0 z-50 bg-surface/90 backdrop-blur transition-shadow ${
+      className={`sticky top-2 z-50 font-display rounded-2xl bg-surface/90 backdrop-blur transition-shadow ${
         scrolled ? "border-b border-line shadow-sm" : "border-b border-transparent"
       }`}
     >
       <nav
         aria-label="Main"
-        className="mx-auto flex max-w-310 items-center justify-between px-2 py-4 md:px-12"
+        className="mx-auto flex max-w-300 items-center justify-between px-2 py-4 md:px-12"
       >
         {/* Logo */}
         <a href="#top" className="font-display text-[26px] font-bold text-ink uppercase">
           skyline<span className="text-brand">.</span>
         </a>
 
-        {/* Desktop links */}
-        <ul className="hidden items-center gap-8 lg:flex">
+        {/* Desktop */}
+        <ul className="hidden items-center gap-10 font-sans lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-[15px] font-medium font-sans text-ink transition-colors hover:text-brand"
+                className="text-[1em] pb-1 font-medium font-sans text-ink transition-colors hover:text-brand hover:border-b-2"
               >
                 {l.label}
               </a>
@@ -58,7 +68,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <a
           href="#contact"
-          className="hidden min-h-11 items-center rounded-xl bg-brand px-5 text-[15px] font-semibold text-white transition-colors hover:bg-brand-dark lg:inline-flex"
+          className="hidden min-h-11 items-center rounded-xl bg-brand px-5 text-[1em] font-semibold text-white cursor-pointer transition-colors hover:bg-brand-dark lg:inline-flex"
         >
           Get started
         </a>
@@ -70,7 +80,7 @@ export default function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex h-11 w-11 items-center justify-center rounded-xl border border-line-strong text-ink lg:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-line-strong text-ink lg:hidden cursor-pointer"
         >
           <svg
             width="22"
@@ -97,17 +107,18 @@ export default function Navbar() {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block py-3 text-[17px] font-medium text-ink hover:text-brand"
+                className="block py-3 text-[1em] font-medium text-ink hover:text-brand"
               >
                 {l.label}
               </a>
             </li>
           ))}
+          
           <li className="pt-3">
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="flex min-h-12 items-center justify-center rounded-xl bg-brand text-[16px] font-semibold text-white hover:bg-brand-dark"
+              className="flex min-h-12 items-center justify-center rounded-xl bg-brand text-[1em] font-semibold text-white hover:bg-brand-dark"
             >
               Get started
             </a>
