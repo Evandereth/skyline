@@ -4,10 +4,10 @@ import agent03 from "../img/agent03.jpg"
 import agent04 from "../img/agent01.jpg"
 
 const agents = [
-  { id: 1, name: "Ireti James", role: "Quantity Surveyor", image: agent01 },
-  { id: 2, name: "Joy Adeola", role: "Civil Engineer", image: agent03 },
-  { id: 3, name: "Andrew Tate", role: "Site Supervisor", image: agent02 },
-  { id: 4, name: "Michael Johnson", role: "CEO", image: agent04 },
+  { id: 1, name: "Ireti James", role: "Real Estate Developer", image: agent01 },
+  { id: 2, name: "Joy Adeola", role: "Consultant & Advisor", image: agent03 },
+  { id: 3, name: "Andrew Tate", role: "Land Survey and Estate Investment Specialist", image: agent02 },
+  { id: 4, name: "Michael Johnson", role: "Local SEO and Digital Marketing Specialist", image: agent04 },
 ];
 
 function AgentCard({ agent }) {

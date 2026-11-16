@@ -1,7 +1,10 @@
 import Agents from "./components/Agents"
 import Areas from "./components/Area"
 import SellBanner from "./components/Banner"
+import Contact from "./components/Contact"
+import FAQ from "./components/faq"
 import Features from "./components/Features"
+import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Listings from "./components/Listings"
 import MortgageCalculator from "./components/Mortgage"
@@ -29,7 +32,10 @@ function App() {
         <SellBanner />
         <Agents />
         <Testimonials />
+        <FAQ />
+        <Contact />
       </main>
+      <Footer />
     </div>  
     </>
   )
