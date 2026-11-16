@@ -1,3 +1,4 @@
+import Agents from "./components/Agents"
 import Areas from "./components/Area"
 import SellBanner from "./components/Banner"
 import Features from "./components/Features"
@@ -6,6 +7,7 @@ import Listings from "./components/Listings"
 import MortgageCalculator from "./components/Mortgage"
 import Navbar from "./components/Navbar"
 import Partners from "./components/Partners"
+import Testimonials from "./components/Testimonials"
 import HowItWorks from "./components/Work"
 
 
@@ -25,6 +27,8 @@ function App() {
         <Features />
         <MortgageCalculator />
         <SellBanner />
+        <Agents />
+        <Testimonials />
       </main>
     </div>  
     </>
