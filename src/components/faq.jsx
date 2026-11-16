@@ -1,7 +1,7 @@
 const faqs = [
   {
     q: "How do I book a viewing?",
-    a: "Open any listing, tap “Book a viewing” and pick a date and time that suits you. An agent will confirm by phone or WhatsApp, usually within [X hours]. You can also message the agent directly to ask questions first.",
+    a: "Open any listing, tap “Book a viewing” and pick a date and time that suits you. An agent will confirm by phone or WhatsApp, usually within 12-24 hours. You can also message the agent directly to ask questions first.",
   },
   {
     q: "Are the listings verified?",
@@ -9,15 +9,15 @@ const faqs = [
   },
   {
     q: "Does it cost anything to use?",
-    a: "Searching, saving homes and using the mortgage calculator are free. [Explain your fees here: for example, whether renters or buyers pay an agent or agency fee, and what sellers pay when a property is sold or let.]",
+    a: "Searching, saving homes and using the mortgage calculator are free. Renters or buyers pay an agent or agency fee, and Sellers pay agreed percentage when a property is sold or let.",
   },
   {
     q: "How does the free valuation work?",
-    a: "Send us the property address and a few details. A local agent reviews the area, recent nearby sales and the condition of the property, then gives you an estimated value, usually within [X working days]. There’s no obligation to sell or list with us.",
+    a: "Send us the property address and a few details. A local agent reviews the area, recent nearby sales and the condition of the property, then gives you an estimated value, usually within 3-4 working days. There’s no obligation to sell or list with us.",
   },
   {
     q: "Which areas do you cover?",
-    a: "We currently cover [list your cities and neighborhoods, e.g. Lekki, Ikeja, Victoria Island]. If your area isn’t listed, send us a message and we’ll tell you when we expect to reach it.",
+    a: "We currently cover Lekki, Ikeja, Victoria Island. If your area isn’t listed, send us a message and we’ll tell you when we expect to reach it.",
   },
   {
     q: "How do I know the property I’m buying is legitimate?",
